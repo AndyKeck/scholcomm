@@ -55,7 +55,6 @@ hard_rel_total <- (pubdata$Hard_Rel*pubdata$Hard_Rel_Price)/1000
 acad_rp_total <- (pubdata$Acad_RP*pubdata$Acad_RP_Price)/1000
 paper_rel_total <- (pubdata$Paper_Rel*pubdata$Paper_Rel_Price)/1000
 
-
 #plot total cost of titles published each year in 1000s
 ggplot(pubdata, aes(x = Year)) +
   geom_path(aes(y=acad_rp_total)) +
