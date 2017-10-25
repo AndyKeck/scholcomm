@@ -55,12 +55,12 @@ hard_rel_total <- (pubdata$Hard_Rel*pubdata$Hard_Rel_Price)/1000
 acad_rp_total <- (pubdata$Acad_RP*pubdata$Acad_RP_Price)/1000
 paper_rel_total <- (pubdata$Paper_Rel*pubdata$Paper_Rel_Price)/1000
 
-geom_path(aes(y=hard_rel_total, color = "Rel Hardback")) +
-  geom_path(aes(y=paper_rel_total, color = "Rel Paperback")) +
 
 #plot total cost of titles published each year in 1000s
 ggplot(pubdata, aes(x = Year)) +
   geom_path(aes(y=acad_rp_total)) +
+#  geom_path(aes(y=hard_rel_total, color = "Rel Hardback")) +
+#  geom_path(aes(y=paper_rel_total, color = "Rel Paperback")) +
   labs(title = "Total Cost of Academic Titles in Religion and Philosophy", 
        subtitle = "Growth 1998 - 2015", 
        caption = "Sources: Bowker annual of library and 
